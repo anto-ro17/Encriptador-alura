@@ -1,0 +1,248 @@
+*{
+    font-family: 'inter', sans-serif;
+    background-color: #F3F5FC;
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+main{
+    max-width: 1200px;
+}
+
+.logo{
+    width: 7em;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    max-height: 10em;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.user-text{
+    width: 24em;
+    height: 15em;
+    resize: none;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: text;
+    color: #0A3871;
+    outline: none;
+}
+
+.user-text::placeholder, .user-text{
+    color: #0A3871;
+    opacity: 80%;
+}
+
+.logo2{
+    float: left;
+    padding-right: 3px;
+}
+
+.alert-message{
+    color: #495057;
+    font-size: 70%;
+}
+
+.encrypt-butt{
+    width: 17em;
+    height: 4em;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    padding: 20px;
+    color: white;
+    background-color: #0A3871;
+    margin-top: 3%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.decrypt-butt{
+    width: 17em;
+    height: 4em;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    padding: 20px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    margin-top: 3%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.output-area{
+    background-color: white;
+    width: 20em;
+    height: 38em;
+    position: absolute;
+    top: 2%;
+    left: 70%;
+    box-shadow: 0 24px 32px -8px rgba(0,0,0,50);
+    border-radius: 24px;
+    padding-right: 20px;
+}
+
+.output{
+    width: 95%;
+    margin-left: 2%;
+    background-color: white;
+    padding-left: 5%;
+    padding-top: 4%;
+    border-radius: 24px;
+}
+
+.persona{
+    background-color: white;
+    width: 80%;
+    padding-left: 30px;
+    margin-top: 50%;
+}
+
+.output-message{
+    text-align: center;
+    background-color: white;
+    padding-left: 15px;
+}
+
+.output-message p{
+    font-size: 0.8rem;
+}
+
+.output-message h3, .output-message p {
+    background-color: white;
+}
+
+
+.button-2{
+    background-color: white;
+    text-align: center;
+    margin-left: 3%;
+    border-radius: 24px;
+}
+
+.copy-butt{
+    width: 90%;
+    height: 4em;
+    color:#0A3871;
+    background-color: white;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-output{
+    width: 12em;
+    height: 19em;
+    font-size: 1.5em;
+    resize: none;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 0.675em;
+}
+
+.linekdin{
+    width: 3em;
+    margin-top: 1%;
+    padding-right: 1em;
+    cursor: pointer;
+}
+.github{
+    width: 3em;
+}
+
+@media (max-width: 1040px)  {
+    
+    main{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo{
+        width: 10%;
+    }
+    .user-area{
+        width: 100%;
+        text-align: center;
+    }
+    .user-text{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .button-1{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    .encrypt-butt{
+        width: 45%;
+    }
+    
+    .decrypt-butt{
+        width: 45%;
+    }
+    .alert-message{
+        width: 80%;
+        text-align: left;
+        margin: 0 auto;
+    }
+    .persona{
+        display: none;
+    }
+    .output-area{
+        background-color: white;
+        width: 90%;
+        height: auto;
+        position:inherit;
+        margin: 5% auto;
+    }
+    .output-message{
+        margin-left: 2%;
+    }
+    .text-output{
+        width: 90%;
+        max-height: 7em;
+    }
+    .button-2{
+        margin-bottom: 4%;
+    }
+    
+}
+@media (max-width: 400px)  {
+   
+    .logo{
+        width: 15%;
+        padding: 0;
+        margin: 1em 1em;
+    }
+    .encrypt-butt{
+        width: 95%;
+    }
+        .decrypt-butt{
+        width: 95%;
+    }
+}

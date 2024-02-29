@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="Img/Logo.png" alt="Logo Alura" class="logo">
+    </header>
+    <main>
+
+        <section class="user-area">
+             <div class="input">
+                <textarea name="inputText" id="usrtxt" cols="30" rows="10" placeholder="Ingrese el texto aquí" class="user-text" required></textarea>
+            </div>  
+            
+            <div class="alert-message">
+                <img src="Img/alert.png" alt="alert-simbol" class="logo2">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div> 
+            
+            <div class="button-1">
+                <input type="button" class="encrypt-butt" value="Encriptar" onclick="encrypt()">
+                <input type="button" class="decrypt-butt" value="Desencriptar" onclick="decrypt()">
+            </div>
+        </section>
+
+        <section class="output-area">
+            <div class="output" id="out-box">
+                <textarea class="text-output" id="outText">Texto cifrado</textarea>
+            </div>
+                <img src="Img/persona.png" alt="persona-buscando" class="persona" id="imgCont">
+            <div class="output-message" id="outMsj">
+                <h3>Ningún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="button-2" id="copButt">
+                <input type="button" class="copy-butt" value="Copiar" id="cop" onclick="coppy()">
+            </div>
+        </section>
+       
+    </main>    
+
+    <footer>
+        <p>By Antonio Rodriguez. Mx</p>
+        <a href="https://www.linkedin.com/in/jose-antonio-rodriguez-zavaleta/"><img src="Img/ln.png" alt="link-ln" class="linekdin"></a>
+        <a href="https://github.com/anto-ro17"><img src="Img/github-mark.png" alt="link-github" class="github"></a>
+    </footer>
+
+</body>
+
+<script src="app.js" defer></script>
+
+</html>
